@@ -13,6 +13,10 @@ document.querySelector('.composer button').addEventListener('click',()=>{
     }
 })
 
+document.querySelector('#limpar').addEventListener('click',()=>{
+    document.querySelector('#input').value='';
+});
+
 //Função que pega o som de acordo com a tecla apertada
 function playSound(sound){
     let audioElement = document.querySelector(`#s_${sound}`); 
@@ -42,7 +46,7 @@ function playComposition(songArray){
 
         }, wait);
 
-        wait += 250;
+        wait += 350;
 
     }
 }
